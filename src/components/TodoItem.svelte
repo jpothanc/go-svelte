@@ -1,36 +1,21 @@
 <script lang="ts">
   import type { Todo } from "../lib/types";
 
-    
-export let todo = {id: 1, todo: "Buy milk", completed: false, userId:1};
-export let itemClicked : (item: Todo) => void;
-export let selected = false;
+  export let todo = { id: 1, todo: "Buy milk", completed: false, userId: 1 };
+  export let itemClicked: (item: Todo) => void;
+  export let selected = false;
 
-let borderColor = todo.completed ? 'green' : 'red';
-function handleClick() {
-     itemClicked(todo);
-}
- function handleKeydown(event: KeyboardEvent) {
-     if (event.key === 'Enter' || event.key === ' ') {
+  let borderColor = todo.completed ? "green" : "red";
+  function handleClick() {
+    itemClicked(todo);
+  }
+  function handleKeydown(event: KeyboardEvent) {
+    if (event.key === "Enter" || event.key === " ") {
       handleClick();
     }
   }
-  $: borderColor = selected ? 'yellow' : todo.completed ? 'green' : 'red';
+  $: borderColor = selected ? "yellow" : todo.completed ? "green" : "red";
 </script>
-
-<style>
-    div {
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        height: 100px;
-        width: 200px;
-        font-size: 10px;
-        background-color: rgb(18, 3, 3);
-    }
-</style>
-
 
 <div
   role="button"
@@ -38,9 +23,21 @@ function handleClick() {
   aria-label="Clickable div"
   on:click={handleClick}
   on:keydown={handleKeydown}
-  style="border: {borderColor} 1px solid ">
-    <h3>{todo.todo}</h3>
-    <p>{todo.completed}</p>
+  style="border: {borderColor} 1px solid "
+>
+  <h3>{todo.todo}</h3>
+  <p>{todo.completed}</p>
 </div>
 
-
+<style>
+  div {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    width: 200px;
+    font-size: 10px;
+    background-color: rgb(18, 3, 3);
+  }
+</style>

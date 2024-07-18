@@ -1,8 +1,8 @@
 <nav>
-  <div class ="test">
-  <a href="/">Home</a>
+  <div class="test">
+    <a href="/">Home</a>
   </div>
-  <br>
+  <br />
   <a href="/about">About</a>
 </nav>
 
@@ -28,8 +28,5 @@
     top: 0;
     left: 0;
     width: 100%; /* Adjust width as needed */
-
-    
-
   }
 </style>
