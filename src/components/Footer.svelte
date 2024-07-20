@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #cfcbcb;
+    background-color: #dd7a02;
     color: #130202;
     position: fixed;
     bottom: 0;
@@ -77,7 +77,7 @@
     flex: 0.5;
   }
   .custom-link {
-    color: #276bb3;
+    color: #111212;
     text-decoration: none;
   }
 </style>

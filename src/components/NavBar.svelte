@@ -1,7 +1,7 @@
 <script>
   import { isAuthenticated } from "../lib/authStore";
   import { FaHome, FaBuromobelexperte } from "svelte-icons/fa";
-  import { Link } from 'svelte-routing';
+  import { Link } from "svelte-routing";
 
   function login() {
     isAuthenticated.update((value) => !value);
@@ -11,10 +11,11 @@
 
 <div class="navbar">
   <nav>
-    <Link to="/"> <FaHome /></Link>
+    <Link to="/"><FaHome /></Link>
     <br />
     <Link to="/about"><FaBuromobelexperte /></Link>
-    
+  </nav>
+
   <button on:click={login}>
     {#if $isAuthenticated}
       Logout
@@ -36,6 +37,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgb(31, 29, 29);
   }
 
   nav {
