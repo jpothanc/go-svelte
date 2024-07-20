@@ -72,7 +72,7 @@
 
   p {
     color: #130202;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
   }

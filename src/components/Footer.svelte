@@ -67,7 +67,7 @@
   }
   .footer-text {
     flex: 8;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
   }
   .footer-url {
