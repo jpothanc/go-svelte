@@ -1,32 +1,70 @@
-<nav>
-  <div class="test">
-    <a href="/">Home</a>
-  </div>
-  <br />
-  <a href="/about">About</a>
-</nav>
+<script>
+  import { isAuthenticated } from "../lib/authStore";
+  import { FaHome, FaBuromobelexperte } from "svelte-icons/fa";
+
+  function login() {
+    isAuthenticated.update((value) => !value);
+    console.log("logged in");
+  }
+</script>
+
+<div class="navbar">
+  <nav>
+    <a href="/"> <FaHome /></a>
+    <br />
+    <a href="/about"><FaBuromobelexperte /></a>
+  </nav>
+  <button on:click={login}>
+    {#if $isAuthenticated}
+      Logout
+    {:else}
+      Login
+    {/if}
+  </button>
+  <div class="end"></div>
+</div>
 
 <style>
-  .test {
+  .navbar {
     display: flex;
-    color: rgb(106, 12, 24);
-    background: #000;
-    height: 100%;
     align-items: center;
-    padding: 5px;
-    box-sizing: border-box;
-  }
-  nav {
-    display: flex;
-    padding-left: 10px;
-    justify-content: left;
-    gap: 10px;
-    background-color: rgb(153, 48, 7);
+    color: #130202;
     height: 40px;
-    align-items: center;
+    background-color: rgb(5, 126, 92);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Adjust width as needed */
+    width: 100%;
+  }
+
+  nav {
+    flex: 9;
+    display: flex;
+    padding-left: 10px;
+    gap: 10px;
+    height: 20px;
+  }
+
+  a {
+    color: #130202;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  button {
+    flex: 0.2;
+    background-color: #f0f0f0;
+    color: #130202;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+  .end {
+    flex: 0.2;
   }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   import type { Todo } from "../lib/types";
   import TodoItem from "./TodoItem.svelte";
 
@@ -7,7 +7,7 @@
   let selectedId: number = -1;
 
   onMount(async () => {
-    var response = await fetch("https://dummyjson.com/todos")
+    await fetch("https://dummyjson.com/todos")
       .then((res) => res.json())
       .then((data) => {
         todos = data.todos;

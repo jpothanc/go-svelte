@@ -4,6 +4,7 @@
   export let todo = { id: 1, todo: "Buy milk", completed: false, userId: 1 };
   export let itemClicked: (item: Todo) => void;
   export let selected = false;
+  import {scale,draw } from "svelte/transition";
 
   let borderColor = todo.completed ? "green" : "red";
   function handleClick() {
@@ -18,6 +19,7 @@
 </script>
 
 <div
+  transition:scale
   role="button"
   tabindex="0"
   aria-label="Clickable div"
@@ -26,7 +28,7 @@
   style="border: {borderColor} 1px solid "
 >
   <h3>{todo.todo}</h3>
-  <p>{todo.completed}</p>
+  <p>{todo.completed ? "Done" : "Pending"}</p>
 </div>
 
 <style>
