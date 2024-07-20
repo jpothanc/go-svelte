@@ -1,10 +1,10 @@
 <script lang="ts">
   import type { Todo } from "../lib/types";
 
-  export let todo = { id: 1, todo: "Buy milk", completed: false, userId: 1 };
+  export let todo = { id: 1, todo: "Buy milk", completed: false, userId: "" };
   export let itemClicked: (item: Todo) => void;
   export let selected = false;
-  import {scale,draw } from "svelte/transition";
+  import { scale, draw } from "svelte/transition";
 
   let borderColor = todo.completed ? "green" : "red";
   function handleClick() {
@@ -29,6 +29,7 @@
 >
   <h3>{todo.todo}</h3>
   <p>{todo.completed ? "Done" : "Pending"}</p>
+  <p>{todo.userId}</p>
 </div>
 
 <style>

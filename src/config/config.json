@@ -5,5 +5,67 @@
             "firstName": "Jessish",
             "lastName": "Pothancheri"
         }
-  }  
+  },  
+  "todos": [
+    {
+      "id": 1,
+      "todo": "Do something nice for someone you care about",
+      "completed": false,
+      "userId": "Alice"
+    },
+    {
+      "id": 2,
+      "todo": "Memorize a poem",
+      "completed": true,
+      "userId": "John"
+    },
+    {
+      "id": 3,
+      "todo": "Watch a classic movie",
+      "completed": true,
+      "userId": "Gilbert"
+    },
+    {
+      "id": 4,
+      "todo": "Watch a documentary",
+      "completed": false,
+      "userId": "Jessish"
+    },
+    {
+      "id": 5,
+      "todo": "Invest in cryptocurrency",
+      "completed": false,
+      "userId": "Ayana"
+    },
+    {
+      "id": 6,
+      "todo": "Contribute code or a monetary donation to an open-source software project",
+      "completed": false,
+      "userId": "Anay"
+    },
+    {
+      "id": 7,
+      "todo": "Solve a Rubik's cube",
+      "completed": true,
+      "userId": "Peter"
+    },
+    {
+      "id": 8,
+      "todo": "Bake pastries for yourself and neighbor",
+      "completed": true,
+      "userId": "Richard"
+    },
+    {
+      "id": 9,
+      "todo": "Go see a Broadway production",
+      "completed": false,
+      "userId": "Jessish"
+    },
+    {
+      "id": 10,
+      "todo": "Write a thank you letter to an influential person in your life",
+      "completed": true,
+      "userId": "Kristen"
+    }
+]
 }
