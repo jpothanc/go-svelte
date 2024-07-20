@@ -4,7 +4,7 @@
   export let todo = { id: 1, todo: "Buy milk", completed: false, userId: "" };
   export let itemClicked: (item: Todo) => void;
   export let selected = false;
-  import { scale, draw } from "svelte/transition";
+  import { scale } from "svelte/transition";
 
   let borderColor = todo.completed ? "green" : "red";
   function handleClick() {

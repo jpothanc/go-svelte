@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onDestroy, onMount } from "svelte";
+  import { onMount } from "svelte";
   import type { Todo } from "../lib/types";
   import TodoItem from "./TodoItem.svelte";
   import config from "../config/config.json";
