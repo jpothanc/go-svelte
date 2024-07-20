@@ -32,6 +32,7 @@
         around the corner, boasting further optimizations, reduced bundle sizes,
         and numerous other enhancements.
       </p>
+      <br />
       <a href="https://svelte.dev/" target="_blank">Learn more about Svelte</a>
       <br />
       <a
@@ -55,7 +56,7 @@
     flex: 1;
     border: 1px solid #000;
     padding: 50px;
-    background-color: #f0f0f0;
+    background-color: #dcd6d6;
     border-radius: 15px;
   }
   a {
@@ -74,6 +75,5 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
   }
 </style>

@@ -55,7 +55,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 40px;
+    height: 30px;
     font-size: 14px;
   }
   .footer-text,
@@ -67,7 +67,8 @@
   }
   .footer-text {
     flex: 8;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 12px;
   }
   .footer-url {
     flex: 0.2;

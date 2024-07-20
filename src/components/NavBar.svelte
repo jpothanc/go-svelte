@@ -30,14 +30,13 @@
   .navbar {
     display: flex;
     align-items: center;
-    color: #130202;
+    color: #161313;
     height: 40px;
-    background-color: rgb(5, 126, 92);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(15, 15, 15);
   }
 
   nav {
