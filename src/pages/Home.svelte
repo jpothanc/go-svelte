@@ -76,7 +76,7 @@
     border-radius: 15px;
   }
   a {
-    color: rgb(5, 126, 92);
+    color: rgb(9, 135, 225);
     text-decoration: none;
   }
 
