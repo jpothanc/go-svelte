@@ -11,8 +11,8 @@
 
 <div class="navbar">
   <nav>
-    <Link to="/"><FaRegStickyNote size="18" /></Link>
-    <Link to="/about"><FaBuromobelexperte size="18" /></Link>
+    <Link to="/">home</Link>
+    <Link to="/about">to-do's</Link>
   </nav>
 
   <button on:click={login}>
