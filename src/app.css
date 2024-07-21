@@ -8,7 +8,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -29,16 +28,3 @@ body {
   margin: 10;
   padding: 0;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  color: #b9afaf;
-  text-align: center;
-  padding-bottom: 80px;
-}
-

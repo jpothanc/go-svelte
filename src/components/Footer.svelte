@@ -57,6 +57,7 @@
     left: 0;
     height: 30px;
     font-size: 14px;
+    column-gap: 2px;
   }
   .footer-text,
   .footer-status {
@@ -75,10 +76,17 @@
     height: 50%;
   }
   .footer-status {
-    flex: 0.5;
+    flex: 3%;
+    max-width: 60px;
+    border-left: #111212 1px solid;
   }
   .custom-link {
     color: #111212;
     text-decoration: none;
+  }
+  @media (max-width: 780px) {
+    .footer-text {
+      font-size: 10px;
+    }
   }
 </style>

@@ -11,9 +11,8 @@
 
 <div class="navbar">
   <nav>
-    <Link to="/"><FaRegStickyNote /></Link>
-    <br />
-    <Link to="/about"><FaBuromobelexperte /></Link>
+    <Link to="/"><FaRegStickyNote size="18" /></Link>
+    <Link to="/about"><FaBuromobelexperte size="18" /></Link>
   </nav>
 
   <button on:click={login}>
@@ -29,14 +28,15 @@
 <style>
   .navbar {
     display: flex;
-    align-items: center;
+    background-color: rgb(15, 15, 15);
     color: #161313;
-    height: 40px;
+    align-items: center;
+    height: 5%;
+    min-height: 30px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: rgb(15, 15, 15);
   }
 
   nav {
@@ -44,29 +44,23 @@
     display: flex;
     padding-left: 10px;
     gap: 10px;
-    height: 20px;
+    height: 50%;
   }
 
-  a {
-    color: #130202;
-    font-weight: 700;
-    text-decoration: none;
-  }
   button {
     flex: 0.2;
     background-color: #f0f0f0;
     color: #130202;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 5px 8px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
     &:hover {
-      filter: brightness(1.2);
+      filter: brightness(0.8);
     }
   }
   .end {
-    flex: 0.2;
+    flex: 0.1;
   }
 </style>

@@ -1,43 +1,29 @@
-<script>
-  // your script goes here
-
+<script lang="ts">
   import ToDoList from "../components/ToDoList.svelte";
 </script>
 
-<div class="container">
-  <div class="flex-item-heading">
-    <h1>todo list</h1>
-  </div>
+<div class="todo-container">
+  <div class="flex-item-heading">todo list</div>
   <div class="flex-item-content">
     <ToDoList />
   </div>
 </div>
 
 <style>
-  .container {
+  .todo-container {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    height: 80vh;
     width: 100%;
+    margin-top: 5vh;
+    border-radius: 10px;
   }
   .flex-item-heading {
-    flex: 0.6;
-    text-align: center;
-    color: #f6f1f1;
-    margin-top: 20px;
-    background-color: #138db5;
-    width: 100%;
-    height: 10px;
-    font-size: 10px;
-    text-align: start;
-    padding-left: 10px;
-  }
-  .flex-item-content {
-    flex: 9;
     display: flex;
-    justify-content: center;
+    color: #f6f1f1;
+    font-size: 14px;
     align-items: center;
-    height: 100%;
+    padding-left: 10px;
+    background-color: #138db5;
   }
+ 
 </style>
