@@ -74,4 +74,12 @@
     color: rgb(9, 135, 225);
     text-decoration: none;
   }
+  @media (max-width: 780px) {
+    .container {
+      margin-left: 2vh auto;
+    }
+    .flex-item-content {
+      font-size: 14px;
+    }
+  }
 </style>
