@@ -1,6 +1,6 @@
 <script>
   import { isAuthenticated } from "../lib/authStore";
-  import { FaHome, FaBuromobelexperte } from "svelte-icons/fa";
+  import { FaRegStickyNote, FaBuromobelexperte } from "svelte-icons/fa";
   import { Link } from "svelte-routing";
 
   function login() {
@@ -11,7 +11,7 @@
 
 <div class="navbar">
   <nav>
-    <Link to="/"><FaHome /></Link>
+    <Link to="/"><FaRegStickyNote /></Link>
     <br />
     <Link to="/about"><FaBuromobelexperte /></Link>
   </nav>

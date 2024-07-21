@@ -2,7 +2,7 @@
 	
    import { Router, Route, Link } from 'svelte-routing';
    import Home from './pages/Home.svelte';
-   import About from './pages/Posts.svelte';
+   import About from './pages/ToDo.svelte';
   import NavBar from './components/NavBar.svelte';
   import Footer from './components/Footer.svelte';
 

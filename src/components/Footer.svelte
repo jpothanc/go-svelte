@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #dd7a02;
+    background-color: #f3efef;
     color: #130202;
     position: fixed;
     bottom: 0;

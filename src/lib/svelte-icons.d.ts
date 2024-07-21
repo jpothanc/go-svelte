@@ -5,6 +5,6 @@ declare module "svelte-icons/fa" {
   export const FaLink: typeof SvelteComponentTyped;
   export const FaHome: typeof SvelteComponentTyped;
   export const FaBuromobelexperte: typeof SvelteComponentTyped;
-  
+  export const FaRegStickyNote: typeof SvelteComponentTyped;
  
 }

@@ -28,6 +28,7 @@
   style="border: {borderColor} 1px solid "
 >
   <h3>{todo.todo}</h3>
+  
   <p>{todo.completed ? "Done" : "Pending"}</p>
   <p>{todo.userId}</p>
 </div>
@@ -38,9 +39,9 @@
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 100px;
+    height: 150px;
     width: 200px;
-    font-size: 10px;
+    font-size: 11px;
     background-color: rgb(18, 3, 3);
   }
 </style>
