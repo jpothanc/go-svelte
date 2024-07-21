@@ -65,6 +65,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    text-wrap: wrap;
+    text-align: center;
   }
   .footer-text {
     flex: 8;
